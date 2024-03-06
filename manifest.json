@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "Evil Extension",
+  "description": "Extensão da Evil Corp",
+  "author": "William Oliveira Silva",
+  "browser_action": {
+    "default_title": "Evil Corp",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
